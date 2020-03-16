@@ -1,4 +1,4 @@
-# mda
+# vue-template
 
 ## Project setup
 
