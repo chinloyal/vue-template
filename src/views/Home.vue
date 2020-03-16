@@ -11,6 +11,9 @@ import AppLayout from '@/layouts/AppLayout.vue';
 import { Component, Vue } from 'vue-property-decorator';
 
 @Component({
+	metaInfo: {
+		title: 'Home',
+	},
 	components: {
 		HelloWorld,
 		AppLayout,

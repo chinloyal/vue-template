@@ -9,6 +9,9 @@ import { Vue, Component } from 'vue-property-decorator';
 import AppLayout from '@/layouts/AppLayout.vue';
 
 @Component({
+	metaInfo: {
+		title: 'About',
+	},
 	components: {
 		AppLayout,
 	},
