@@ -1,0 +1,34 @@
+{
+	"compilerOptions": {
+		"target": "esnext",
+		"module": "esnext",
+		"strict": false,
+		"jsx": "preserve",
+		"importHelpers": true,
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"baseUrl": ".",
+		"noImplicitAny": false,
+		"strictFunctionTypes": false,
+		"strictPropertyInitialization": false,
+		"types": ["webpack-env", "vuetify"],
+		"paths": {
+			"@/*": ["src/*"],
+			"vue$": ["vue/dist/vue.esm.js"],
+			"axios": ["src/utils/axios-configured"],
+			"$axios": ["node_modules/axios/index"]
+		},
+		"lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx",
+		"src/**/*.vue",
+		"tests/**/*.ts",
+		"tests/**/*.tsx"
+	],
+	"exclude": ["node_modules"]
+}
