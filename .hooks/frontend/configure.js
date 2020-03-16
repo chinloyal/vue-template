@@ -1,11 +1,19 @@
 /*
 	Run from package.json preinstall script
 */
-const log = require("../log");
+const log = null;
+
+try {
+	log = require('../log');
+} catch (err) {}
 
 // Enforces the use of npm
 if (process.env.npm_execpath.match(/yarn/)) {
-  log.error("Use npm to install your packages, not yarn.");
+	try {
+		log.error('Use npm to install your packages, not yarn.');
+	} catch (err) {
+		console.error('Use npm to install your packages, not yarn.');
+	}
 
-  process.exit(1);
+	process.exit(1);
 }
