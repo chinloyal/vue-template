@@ -10,6 +10,7 @@ function root(args) {
 
 module.exports = {
 	transpileDependencies: ['vuetify'],
+	productionSourceMap: false,
 	configureWebpack: {
 		mode: process.env.NODE_ENV,
 		resolve: {
